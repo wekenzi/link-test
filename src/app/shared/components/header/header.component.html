@@ -1,0 +1,27 @@
+<header class="sticky-top">
+    <mat-toolbar color="primary" class="p-0">
+        <div class="container py-4">
+            <div class="align-items-center d-flex">
+                <button *ngIf="!showSideNav" mat-icon-button [disableRipple]="true" class="mr-4" (click)="toggleSideNav()">
+                    <mat-icon>sort</mat-icon>
+                </button>
+                <button *ngIf="showSideNav" mat-icon-button [disableRipple]="true" class="mr-4" (click)="toggleSideNav()">
+                    <i class="icofont-close-line icofont-2x"></i>
+                </button>
+                <img src="assets/images/logo.png" style="cursor: pointer;" [routerLink]="['/']" alt="logo" title="link">
+                <span class="spacer"></span>
+                <div class="right-icons">
+                    <button mat-button [disableRipple]="true" matTooltip="Search" class="bg-accent ml-2">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                    <button mat-button [disableRipple]="true" matTooltip="Notifications" class="bg-accent ml-2">
+                        <mat-icon>notifications</mat-icon>
+                    </button>
+                    <button mat-button [disableRipple]="true" matTooltip="Notifications" class="bg-accent ml-2">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+</header>

@@ -1,0 +1,29 @@
+<div class="services-wrapper" style="background-image: url('assets/images/banner1.jpg');">
+    <div class="overlay"></div>
+    <div class="caption">
+        <h1>How we have helped</h1>
+        <p>See how AI Foundation have promoted change locally and to world.</p>
+        <div class="services">
+            <div class="first-row">
+                <div class="service" *ngFor="let service of services | slice:0:4" [appChangeColorHover]="'hoverd'">
+                    <div class="frame"></div>
+                    <div class="service-inner">
+                        <img src="assets/images/{{ service.icon }}" alt="icon">
+                        <p>{{ service.text }}</p>
+                        <i class="icofont-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="service" *ngFor="let service of services | slice:4:7" [appChangeColorHover]="'hoverd'">
+                    <div class="frame"></div>
+                    <div class="service-inner">
+                        <img src="assets/images/{{ service.icon }}" alt="icon">
+                        <p>{{ service.text }}</p>
+                        <i class="icofont-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

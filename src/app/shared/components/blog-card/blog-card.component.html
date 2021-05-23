@@ -1,0 +1,16 @@
+<mat-card class="blog-card" (click)="navigateToBlog(blog.id)">
+  <img mat-card-image class="img" [src]="blog.urlToImage || 'assets/images/placeholder.jpg'" alt="image">
+  <mat-card-content>
+    <h1>{{ blog.title }}</h1>
+    <span class="badge">
+      {{ blog.sourceID | category: categories }}
+    </span>
+    <p class="desc">
+      {{ blog.description }}
+    </p>
+    <div class="date text-secondary ">
+      <mat-icon color="accent">date_range</mat-icon>
+      <span> {{ blog.publishedAt | date }} </span>
+    </div>
+  </mat-card-content>
+</mat-card>      

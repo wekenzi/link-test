@@ -1,0 +1,38 @@
+@import '../../../../assets/scss/variables.scss';
+footer{
+    .main-footer{
+        background-color: #d9d9d9;
+        a,p{
+            color: #76797e;
+        }
+        li{
+            margin: 10px;
+        }
+        .social-links a{
+            font-size: 24px;
+        }
+        .subscribe-form{
+            input{
+                width: 300px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0px;
+                border: none;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            button {
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+            }
+        }
+    }
+    .rights{
+        padding: 12px;
+        background-color: $darkCyan;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+    }
+}

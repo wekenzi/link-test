@@ -1,0 +1,14 @@
+<app-home-slider></app-home-slider>
+<div class="home-blogs">
+    <div class="container">
+        <div class="blogs-header">
+            <h1>Latest News</h1>
+            <button mat-button color="accent" [routerLink]="['/blogs']">
+                <span class="mr-2">View All</span>
+                <i class="icofont-long-arrow-right"></i>
+            </button>
+        </div>
+        <app-blogs [isHomePage]="true"></app-blogs>
+    </div>
+</div>
+<app-services></app-services>

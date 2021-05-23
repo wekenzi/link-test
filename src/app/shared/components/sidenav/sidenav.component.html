@@ -1,0 +1,22 @@
+<div class="side-nav" [class.show-side-nav]="showSideNav">
+    <div class="social-icons">
+        <a *ngFor="let socialLink of socialLinks" [href]="socialLink.link" target="_blank"><i [class]="socialLink.icon"></i></a>
+    </div>
+    <div class="site-links">
+        <div>
+            <h1 [routerLink]="['/']">Home</h1>
+            <h1>About Us</h1>
+                <p>Who are us?</p>
+                <p>Why us?</p>
+            <h1>News</h1>
+                <p [routerLink]="['/blogs']">News</p>
+                <p>Events</p>
+            <h1>Careers</h1>
+                <p>Opportunities</p>
+        </div>
+        <div>
+            <h1>Contact Us</h1>
+            <h1>Site Map</h1>
+        </div>
+    </div>
+</div>

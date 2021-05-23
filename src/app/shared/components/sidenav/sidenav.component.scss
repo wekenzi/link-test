@@ -1,0 +1,48 @@
+@import '../../../../assets/scss/variables.scss';
+.side-nav{
+    height: calc(100% - 88px);
+    position: fixed;
+    z-index: 1000;
+    top: 88px;
+    left: -500px;
+    width: 500px;
+    background-color: $darkCyan;
+    display: flex;
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s all;
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+        margin: 0px 30px;
+        justify-content: flex-end;
+        a{
+            margin: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .site-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1, p{
+            cursor: pointer;
+        }
+        h1{
+            margin-top: 35px;
+            font-size: 1.8rem;
+        }
+        p{
+            font-weight: 100;
+            font-size: 18px;
+            opacity: 0.5;
+        }
+    }
+    &.show-side-nav{
+        left: 0px;
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../../../../assets/scss/variables.scss';
+.home-blogs{
+    background-color: #fff;
+    padding: 1rem 0 4rem 0;
+    .blogs-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+        h1{
+            color: #000;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        p,i{
+            color: $lightGreen;
+            font-size: 1rem;
+            margin: 0;
+        }
+        i{
+            font-size: 2rem;
+        }
+    }
+}

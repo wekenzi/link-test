@@ -1,0 +1,32 @@
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerlink="/">Home</a></li>
+            <li class="breadcrumb-item"><a routerlink="/blogs">News</a></li>
+            <li class="breadcrumb-item active" aria-current="page">New Details</li>
+        </ol>
+    </nav>
+    <h1 class="page-header">News Details</h1>
+    <div class="blog-content">
+        <mat-card class="blog-card" *ngIf="blog">
+            <img mat-card-image class="img" [src]="blog.urlToImage || 'assets/images/placeholder.jpg'" alt="image">
+            <mat-card-content>
+                <span class="badge">
+                    {{ blog.sourceID | category: categories }}
+                </span>
+              <h1>{{ blog.title }}</h1>
+              <p class="desc">
+                {{ blog.content }}
+              </p>
+            </mat-card-content>
+        </mat-card> 
+    </div>
+    <div class="related-blogs my-4">
+        <h1 class="page-header">Related Topics</h1>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6" *ngFor="let blog of realtedBlogs">
+                <app-realted-bolg  [blog]="blog"></app-realted-bolg>
+            </div>
+        </div>
+    </div>
+</div>
